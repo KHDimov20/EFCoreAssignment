@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JSON4.Domain\JSON4.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

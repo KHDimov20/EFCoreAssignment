@@ -35,7 +35,7 @@ namespace JSON4.Application.Services
 
         public async Task<IEnumerable<Assignement>> GetAssignmentsByProjectIdAsync(int projectId)
         {
-            return await _assignementRepository.GetAssignmentsByProjectIdAsync(projectId);
+            return await _assignementRepository.GetAssignementsByProjectIdAsync(projectId);
         }
 
         public async Task AddAssignmentAsync(Assignement assignement)

@@ -10,10 +10,10 @@ namespace JSON4.Infrastructure.Persistence.Repositories.Abstractions
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly CompanyContext _context;
+        private readonly ApplicationDBContext _context;
         private readonly DbSet<T> _dbSet;
 
-        public Repository(CompanyContext context)
+        public Repository(ApplicationDBContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();
